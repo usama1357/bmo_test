@@ -1,1 +1,1 @@
-export const URL = "http://openlibrary.org/"
+export const URL = "https://openlibrary.org/";

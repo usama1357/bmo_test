@@ -45,9 +45,6 @@ export default function ResultsPage() {
       property = property.substr(1);
     }
     return function (a, b) {
-      /* next line works with strings and numbers,
-       * and you may want to customize it to your needs
-       */
       var result =
         a[property] < b[property] ? -1 : a[property] > b[property] ? 1 : 0;
       return result * sortOrder;
@@ -55,12 +52,23 @@ export default function ResultsPage() {
   }
 
   const Sort = (val) => {
+    console.log(val);
     if (val === "1") {
-      let temp = results;
+      let temp = [];
+      if (results) {
+        results.forEach((element) => {
+          temp.push(element);
+        });
+      }
       temp.sort(dynamicSort("title"));
       setresults(temp);
     } else if (val === "2") {
-      let temp = results;
+      let temp = [];
+      if (results) {
+        results.forEach((element) => {
+          temp.push(element);
+        });
+      }
       temp.sort(dynamicSort("first_publish_year"));
       setresults(temp);
     }
@@ -86,7 +94,7 @@ export default function ResultsPage() {
       <div class="stv-radio-buttons-wrapper">
         <input
           type="radio"
-          class="stv-radio-button"
+          className="stv-radio-button"
           name="radioButtonTest"
           value="1"
           id="button1"
@@ -95,7 +103,7 @@ export default function ResultsPage() {
         <label htmlFor="button1">Name</label>
         <input
           type="radio"
-          class="stv-radio-button"
+          className="stv-radio-button"
           name="radioButtonTest"
           value="2"
           id="button2"
