@@ -1,0 +1,28 @@
+.BookPage {
+  display: flex;
+  margin: 40px;
+  flex-wrap: wrap;
+  height: 70vh;
+  justify-content: space-between;
+  img {
+    width: 30%;
+    border-radius: 8px;
+  }
+  .BookInfo {
+    width: 60%;
+    padding-left: 00px;
+    text-align: left;
+    p {
+      font-size: 16px;
+    }
+    .title {
+      color: #ffd700;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .label {
+      display: block;
+      font-size: 14px;
+    }
+  }
+}

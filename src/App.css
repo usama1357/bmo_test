@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  font-family: cursive;
+  background-color: black;
+  color: white;
+  height: 100%;
+  min-height: 100vh;
+}

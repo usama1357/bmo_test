@@ -1,0 +1,33 @@
+.ResultCards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 910px;
+  .card {
+    display: inline-block;
+    width: 230px;
+    height: 150px;
+    box-shadow: 0 0 20px #fff09e;
+    margin: 25px;
+    padding: 10px 10px 0 10px;
+    vertical-align: top;
+    cursor: pointer;
+    :hover {
+      transition-duration: 0.5s;
+      transform: scale(1.1);
+    }
+    .content {
+      border: 2px solid #ffd700;
+      height: 80%;
+      overflow: hidden;
+
+      .title {
+        margin-top: 12px;
+        font-size: 20px;
+      }
+      .author {
+        font-size: 15px;
+      }
+    }
+  }
+}
