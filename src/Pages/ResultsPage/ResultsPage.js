@@ -17,7 +17,7 @@ export default function ResultsPage() {
   const fetchResults = async (val) => {
     setloading(true);
     await axios
-      .get(URL + `search.json?q=${val}`)
+      .get(URL + `search.json?q=${val}/`)
       .then(function (response) {
         console.log(response.data.docs);
         setresults(response.data.docs);

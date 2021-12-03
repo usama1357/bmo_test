@@ -16,7 +16,7 @@ export default function BookPage() {
     console.log(location);
     await axios
       .get(
-        `https://openlibrary.org/api/books?bibkeys=ISBN:${val}&jscmd=data&format=json`
+        `https://openlibrary.org/api/books?bibkeys=ISBN:${val}&jscmd=data&format=json/`
       )
       .then(function (response) {
         let img = response.data[`ISBN:${val}`].cover
