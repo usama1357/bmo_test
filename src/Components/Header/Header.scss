@@ -12,6 +12,7 @@
     color: #ffd700;
     font-weight: bold;
     cursor: pointer;
+    margin-right: 20px;
   }
   .searchbar {
   }
@@ -22,5 +23,39 @@
   .links:hover {
     font-weight: bold;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-body {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    padding-left: 0px;
+    padding-right: 20px;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 20px;
+    //   box-shadow: 0 0 20px #aaa;
+
+    .title {
+      font-size: 24px;
+      color: #ffd700;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: left;
+      margin-right: 0px;
+    }
+    .searchbar {
+    }
+    .links {
+      flex-grow: 1;
+      display: none;
+      text-align: right;
+    }
+    .links:hover {
+      font-weight: bold;
+      cursor: pointer;
+    }
   }
 }

@@ -23,10 +23,10 @@ export default function Header() {
         My Library
       </div>
       <div className="searchbar">
-        {location.pathname.includes("main") ? (
-          <div></div>
-        ) : (
+        {location.pathname.includes("search") ? (
           <SearchBar type="Header" />
+        ) : (
+          <div></div>
         )}
       </div>
       <span className="links">About</span>

@@ -70,7 +70,8 @@ export default function ResultsPage() {
     <div className="ResultsPage">
       <Cliploader loading={loading} />
       <div style={{ textAlign: "left", marginLeft: "20px" }}>
-        Showing {results ? results.length : ""} Results for {title}
+        Showing {results ? results.length : ""} Results for {title} (Click on an
+        item)
       </div>
       <div
         style={{
